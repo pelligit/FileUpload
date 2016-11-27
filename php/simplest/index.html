@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>upload a file</title>
+	<style>
+		body{
+			font-family: 微软雅黑;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<form action="file.php" method="post" enctype="multipart/form-data" target="file_upload">
+		choose file
+		<input type="file" name="a_file"><br />
+		<input type="submit" value="upload" name="send_file">
+	</form>
+
+	<iframe name="file_upload" frameborder="0" style="display:none;"></iframe>
+</body>
+</html>
